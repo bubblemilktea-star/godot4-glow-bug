@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://c2oyd2wjvjyil"]
+
+[ext_resource type="Texture2D" uid="uid://nfdbe4mkpipa" path="res://exp-slash-effect.png" id="1_hk31c"]
+
+[sub_resource type="Environment" id="Environment_g71xe"]
+background_mode = 3
+glow_enabled = true
+glow_blend_mode = 1
+
+[node name="Node2D" type="Node2D"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_g71xe")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+modulate = Color(3, 3, 3, 1)
+texture_filter = 1
+texture = ExtResource("1_hk31c")
